@@ -115,6 +115,34 @@ body {
   }
 
 
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 de cada lado */
+    gap: 20px; /* espaço entre os cards */
+    padding: 20px;
+}
+
+/* Estilo do card */
+.card {
+    background: #1a0000; /* vermelho escuro */
+    border: 2px solid crimson;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* aumenta quando passa o mouse */
+    box-shadow: 0 0 15px red; /* brilho vermelho */
+}
+
+.card img {
+    width: 100%; /* imagem ocupa o card todo */
+    border-radius: 8px;
+}
+
+
 
 
 
