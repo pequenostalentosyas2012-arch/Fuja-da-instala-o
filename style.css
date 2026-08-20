@@ -107,6 +107,12 @@ body {
   padding: 30px 20px;
   box-shadow: 0 0 20px rgba(255,0,0,0.4);
 }
+  img {
+    max-width: 100%; /* não estoura a tela */
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid crimson;
+  }
 
 
 
