@@ -54,12 +54,23 @@ style="width: 250%; height: 100%; auto:0;">
 
 .menu {
   position: fixed;  /* Faz o menu ficar parado na tela */
-  top: 0;           /* Cola lá em cima */
+  top: 0;           
   left: 0;
   width: 100%;      /* Ocupa a tela toda */
-  background-color: black; /* Mesma cor do fundo pra não sumir */
+  background-color: black; 
   z-index: 999;     /* Fica na frente de tudo */
   padding: 15px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 120px;
+    z-index: 1000; /* garante que o menu fica por cima */
 }
 body {
   padding-top: 80px;
@@ -97,6 +108,21 @@ body {
   box-shadow: 0 0 20px rgba(255,0,0,0.4);
 }
 
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+.menu a {
+    color: crimson;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: white;
+    text-shadow: 0 0 5px red;
+}
 
 
 
