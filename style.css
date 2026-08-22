@@ -1,7 +1,8 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
   font-family: 'Press Start 2P', cursive;
   color: red;
 }
@@ -12,82 +13,126 @@ body {
   font-family: 'Press Start 2P', cursive;
 }
 
+.home-div {
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 30px;
+  margin-top: 5%;
+}
+
+.inicio {
+  flex: 1;
+
+}
+
+.titulo {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  float: left;
+}
+
+.descricao {
+  float: left;
+}
+
 a {
   color: crimson;
   text-decoration: none;
   font-family: 'Bebas Neue', sans-serif;
 }
+
 a:hover {
   color: white;
 }
 
 body {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
+
 .cartoes {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .cartao {
-    width: 250px;
-    border-radius: 10px;
-    overflow: hidden;
-    background: #222;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #222;
 }
 
 .cartao img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 
 .cartao h3 {
-    color: white;
-    padding: 15px;
-    margin: 0;
+  color: white;
+  padding: 15px;
+  margin: 0;
 }
 
-<img src="ftflogo_.webp" alt="flee the facility" 
-style="width: 250%; height: 100%; auto:0;">
+.img-1 {
+  flex-shrink: 0;
+  /* Impede a imagem de ser esmagada se a tela diminuir */
+  width: 35%;
+  height: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 10%;
+}
 
 .menu {
-  position: fixed;  /* Faz o menu ficar parado na tela */
-  top: 0;           
+  position: fixed;
+  /* Faz o menu ficar parado na tela */
+  top: 0;
   left: 0;
-  width: 100%;      /* Ocupa a tela toda */
-  background-color: black; 
-  z-index: 999;     /* Fica na frente de tudo */
+  width: 100%;
+  /* Ocupa a tela toda */
+  background-color: black;
+  z-index: 999;
+  /* Fica na frente de tudo */
   padding: 15px;
+}
+.roblosx.webp{
+  width: 10px;
+  height: 10px;
 }
 
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: black;
-    padding: 120px;
-    z-index: 1000; /* garante que o menu fica por cima */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  padding: 120px;
+  z-index: 1000;
+  /* garante que o menu fica por cima */
 }
-body {
+
+.body {
   padding-top: 80px;
+}
 
 .secao-preta {
   background: #0a0a0a;
-  padding: 50px 20px;
   border-left: 4px solid red;
 }
 
 
 .secao-vermelha {
   background: #1a0000;
-  padding: 50px 20px;
+ 
   border-left: 4px solid #ff0000;
 }
-  .caixa-mapa {
+
+.caixa-mapa {
   background: #1a0000;
   border: 2px solid red;
   border-radius: 10px;
@@ -95,69 +140,74 @@ body {
   padding: 10px;
   text-align: center;
 }
+
 .caixa-mapa h3 {
   color: white;
   background: black;
   padding: 5px;
 }
-  
-  .secao-contato {
+
+.secao-contato {
   background: #1a0000;
   border-left: 4px solid #ff0000;
   padding: 30px 20px;
-  box-shadow: 0 0 20px rgba(255,0,0,0.4);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
 }
-  img {
-    max-width: 100%; /* não estoura a tela */
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid crimson;
-  }
+
+img {
+  max-width: 100%;
+  /* não estoura a tela */
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid crimson;
+}
 
 
 .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 de cada lado */
-    gap: 20px; /* espaço entre os cards */
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* 2 de cada lado */
+  gap: 20px;
+  /* espaço entre os cards */
+  padding: 20px;
 }
 
 /* Estilo do card */
-.card{
-    background: #1a0000; /* vermelho escuro */
-    border: 2px solid crimson;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    transition: 0.3s;
+.card {
+  background: #1a0000;
+  /* vermelho escuro */
+  border: 2px solid crimson;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05); /* aumenta quando passa o mouse */
-    box-shadow: 0 0 15px red; /* brilho vermelho */
+  transform: scale(1.05);
+  /* aumenta quando passa o mouse */
+  box-shadow: 0 0 15px red;
+  /* brilho vermelho */
 }
 
 .card img {
-    width: 100%; /* imagem ocupa o card todo */
-    border-radius: 8px;
+  width: 100%;
+  /* imagem ocupa o card todo */
+  border-radius: 8px;
 }
 
-  .menu {
-    list-style: none; /* tira os pontinhos */
-    display: flex;
-    gap: 20px;
+.menu {
+  list-style: none;
+  /* tira os pontinhos */
+  display: flex;
+  gap: 20px;
 }
+
 .menu a {
-    color: crimson;
-    text-decoration: none;
+  color: crimson;
+  text-decoration: none;
 }
+
 .menu a:hover {
-    text-shadow: 0 0 5px red;
+  text-shadow: 0 0 5px red;
 }
-
-
-
-
-
-
-
